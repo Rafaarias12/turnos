@@ -1,0 +1,9 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* /Layout/NavMenu.razor.rz.scp.css */
+.collapse[b-1fooq2lngt] {
+    display: none;
+}
+
+    .collapse.show[b-1fooq2lngt] {
+        display: block;
+    }

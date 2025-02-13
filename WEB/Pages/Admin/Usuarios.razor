@@ -1,0 +1,48 @@
+﻿@page "/admin/usuarios"
+@using WEB.Responses
+@inject HttpClient Http
+
+
+
+<h3>Usuarios</h3>
+
+@if (usuarios != null)
+{
+    <table class="table table-head-bg-primary mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Username</th>
+                <th scope="col">Perfil</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var (usuario, index) in usuarios.Select((usuario, index) => (usuario, index + 1)))
+            {
+                <tr>
+                    <td>@index</td> <!-- Muestra el número de fila -->
+                    <td>@usuario.Nombre</td>
+                    <td>@usuario.Apellido</td>
+                    <td>@usuario.UserName</td>
+                    <td>@usuario.PerfilId</td>
+                    <td>
+                        <button class="btn btn-primary">Editar</button>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<UsuariosResponse> usuarios = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        usuarios = await Http.GetFromJsonAsync<List<UsuariosResponse>>("api/Usuarios");
+    }
+}

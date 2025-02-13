@@ -1,0 +1,94 @@
+﻿@page "/admin/perfiles"
+@using WEB.Pages.Helpers
+@using WEB.Responses
+@using Helpers
+
+@inject IJSRuntime JS
+@inject HttpClient Http
+
+
+<h3>Perfiles</h3>
+
+<button class="btn btn-primary" @onclick="AbrirModal"><i class="fas fa-plus"></i></button>
+
+@if(perfiles != null)
+{
+    <table class="table table-head-bg-primary mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var (perfil, index) in perfiles.Select((perfil, index) => (perfil, index + 1)))
+            {
+                <tr>
+                    <td>@index</td> <!-- Muestra el número de fila -->
+                    <td>@perfil.Descripcion</td>
+                    <td>
+                        <button class="btn btn-primary">Editar</button>
+                        <button class="btn btn-danger">Eliminar</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<Modal @ref="modalRef" Id="miModal" Title="Guardar" OnConfirm="GuardarDatos">
+    <EditForm Model="@nuevoPerfil">
+        <DataAnnotationsValidator />
+        <div class="mb-3">
+            <label class="form-label">Descripción</label>
+            <InputText class="form-control" @bind-Value="nuevoPerfil.Descripcion" />
+        </div>
+    </EditForm>
+</Modal>
+
+@code {
+    private List<PerfilesResponse> perfiles = new();
+    private Modal? modalRef;
+    private PerfilesResponse nuevoPerfil = new PerfilesResponse();
+
+    protected override async Task OnInitializedAsync()
+    {
+        perfiles = await Http.GetFromJsonAsync<List<PerfilesResponse>>("api/Perfiles");
+    }
+
+    private async Task AbrirModal()
+    {
+        if (modalRef != null)
+            await modalRef.ShowAsync();
+    }
+
+    private async Task GuardarDatos()
+    {
+        try
+        {
+            HttpResponseMessage response = await Http.PostAsJsonAsync("api/perfiles", nuevoPerfil);
+            response.EnsureSuccessStatusCode(); // Verifica si la respuesta es correcta
+
+            bool resultado = await response.Content.ReadFromJsonAsync<bool>();
+
+            if (resultado)
+            {
+                await JS.InvokeVoidAsync("showAlert", "success", "Perfil guardado con éxito.");
+                nuevoPerfil = new PerfilesResponse(); // Limpiar el formulario
+                await modalRef.HideAsync();
+            }
+            else
+            {
+                await JS.InvokeVoidAsync("showAlert", "error", "No se pudo guardar el perfil.");
+            
+            }
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("showAlert", "error", $"Error: {ex.Message}");
+            await modalRef.HideAsync();
+        }
+    
+    }
+}

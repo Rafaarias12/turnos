@@ -1,0 +1,115 @@
+﻿<div class="sidebar-logo">
+    <!-- Logo Header -->
+    <div class="logo-header" data-background-color="dark">
+        <a href="index.html" class="logo">
+            <img src="img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand" height="20" />
+        </a>
+        <div class="nav-toggle">
+            <button class="btn btn-toggle toggle-sidebar" @onclick="ToggleNavMenu">
+                <i class="gg-menu-right"></i>
+            </button>
+            <button class="btn btn-toggle sidenav-toggler" @onclick="ToggleNavMenu">
+                <i class="gg-menu-left"></i>
+            </button>
+        </div>
+        <button class="topbar-toggler more">
+            <i class="gg-more-vertical-alt"></i>
+        </button>
+    </div>
+    <!-- End Logo Header -->
+</div>
+
+<div class="sidebar-wrapper scrollbar scrollbar-inner">
+    <div class="sidebar-content">
+        <ul class="nav nav-secondary">
+            <!-- Dashboard -->
+            <li class="nav-item active">
+                <a @onclick='() => ToggleCollapse("dashboard")'>
+                    <i class="fab fa-whmcs"></i>
+                    <p>Administrador</p>
+                    <span class="caret"></span>
+                </a>
+                <div class="@($"collapse {(IsCollapsed("dashboard") ? "show" : "")}")" id="dashboard">
+                    <ul class="nav nav-collapse">
+                        @* <li>
+                            <a href="../demo1/index.html">
+                                <span class="sub-item">Usuarios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../demo1/index.html">
+                                <span class="sub-item">Perfiles</span>
+                            </a>
+                        </li> *@
+
+                        <li><NavLink href="/admin/usuarios"><span class="sub-item">Usuarios</span></NavLink></li>
+                        <li><NavLink href="/admin/perfiles"><span class="sub-item">Perfiles</span></NavLink></li>
+                        <li><NavLink href="/admin/parametros"><span class="sub-item">Parametros</span></NavLink></li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Components -->
+            <li class="nav-section">
+                <span class="sidebar-mini-icon">
+                    <i class="fa fa-ellipsis-h"></i>
+                </span>
+                <h4 class="text-section">Components</h4>
+            </li>
+
+            <!-- Base -->
+            <li class="nav-item">
+                <a @onclick='() => ToggleCollapse("base")'>
+                    <i class="fas fa-layer-group"></i>
+                    <p>Base</p>
+                    <span class="caret"></span>
+                </a>
+                <div class="@($"collapse {(IsCollapsed("base") ? "show" : "")}")" id="base">
+                    <ul class="nav nav-collapse">
+                        <li>
+                            <a href="components/avatars.html">
+                                <span class="sub-item">Avatars</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="components/buttons.html">
+                                <span class="sub-item">Buttons</span>
+                            </a>
+                        </li>
+                        <!-- Agrega más elementos aquí -->
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@code {
+    // Estado para controlar el menú colapsable
+    private Dictionary<string, bool> collapseStates = new();
+
+    // Método para alternar el estado de un colapsable
+    private void ToggleCollapse(string id)
+    {
+        if (collapseStates.ContainsKey(id))
+        {
+            collapseStates[id] = !collapseStates[id];
+        }
+        else
+        {
+            collapseStates[id] = true;
+        }
+    }
+
+    // Método para verificar si un colapsable está abierto
+    private bool IsCollapsed(string id) => collapseStates.ContainsKey(id) && collapseStates[id];
+
+    // Estado para el menú lateral
+    private bool collapseNavMenu = true;
+
+    // Método para alternar el menú lateral
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

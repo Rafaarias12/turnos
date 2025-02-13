@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\web\\pages\\helpers\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|solutionrelative:web\\pages\\helpers\\modal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\web\\pages\\admin\\perfiles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|solutionrelative:web\\pages\\admin\\perfiles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\web\\responses\\perfilesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|solutionrelative:web\\responses\\perfilesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB18BBEF-5CEA-46AA-9004-72908E1E9A0F}|API\\API.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\api\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB18BBEF-5CEA-46AA-9004-72908E1E9A0F}|API\\API.csproj|solutionrelative:api\\controllers\\perfilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CA8EF0C-4589-4352-9604-B7A5E92188F4}|Model\\Model.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\model\\usuarios\\perfilesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CA8EF0C-4589-4352-9604-B7A5E92188F4}|Model\\Model.csproj|solutionrelative:model\\usuarios\\perfilesservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\web\\pages\\admin\\usuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|solutionrelative:web\\pages\\admin\\usuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|c:\\users\\dell\\documents\\proyectos-frontend\\turnos\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45227209-6411-4137-A983-8D96309C0F5C}|WEB\\WEB.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Modal.razor",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Helpers\\Modal.razor",
+              "RelativeDocumentMoniker": "WEB\\Pages\\Helpers\\Modal.razor",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Helpers\\Modal.razor",
+              "RelativeToolTip": "WEB\\Pages\\Helpers\\Modal.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T23:15:13.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PerfilesResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Responses\\PerfilesResponse.cs",
+              "RelativeDocumentMoniker": "WEB\\Responses\\PerfilesResponse.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Responses\\PerfilesResponse.cs",
+              "RelativeToolTip": "WEB\\Responses\\PerfilesResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T22:38:06.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerfilesServices.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\Model\\Usuarios\\PerfilesServices.cs",
+              "RelativeDocumentMoniker": "Model\\Usuarios\\PerfilesServices.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\Model\\Usuarios\\PerfilesServices.cs",
+              "RelativeToolTip": "Model\\Usuarios\\PerfilesServices.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T19:58:01.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerfilesController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\API\\Controllers\\PerfilesController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PerfilesController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\API\\Controllers\\PerfilesController.cs",
+              "RelativeToolTip": "API\\Controllers\\PerfilesController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAWwBgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T19:48:52.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Program.cs",
+              "RelativeDocumentMoniker": "WEB\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Program.cs",
+              "RelativeToolTip": "WEB\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T16:53:54.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perfiles.razor",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Admin\\Perfiles.razor",
+              "RelativeDocumentMoniker": "WEB\\Pages\\Admin\\Perfiles.razor",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Admin\\Perfiles.razor",
+              "RelativeToolTip": "WEB\\Pages\\Admin\\Perfiles.razor",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAmwFIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T16:37:33.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuarios.razor",
+              "DocumentMoniker": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Admin\\Usuarios.razor",
+              "RelativeDocumentMoniker": "WEB\\Pages\\Admin\\Usuarios.razor",
+              "ToolTip": "C:\\Users\\Dell\\Documents\\Proyectos-Frontend\\Turnos\\WEB\\Pages\\Admin\\Usuarios.razor",
+              "RelativeToolTip": "WEB\\Pages\\Admin\\Usuarios.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T16:25:57.095Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

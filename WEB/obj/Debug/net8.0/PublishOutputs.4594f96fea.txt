@@ -1,0 +1,2 @@
+C:\Users\Dell\Documents\Proyectos-Frontend\Turnos\web\bin\Debug\net8.0\publish\appsettings.json
+C:\Users\Dell\Documents\Proyectos-Frontend\Turnos\web\bin\Debug\net8.0\publish\web.config

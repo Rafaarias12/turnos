@@ -1,0 +1,7 @@
+.collapse[b-1fooq2lngt] {
+    display: none;
+}
+
+    .collapse.show[b-1fooq2lngt] {
+        display: block;
+    }
