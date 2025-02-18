@@ -8,7 +8,7 @@ Consta de los siguientes temas:
 
 - Gestión de Usuarios
 - Registro de Vehiculos.
-- Ruta según el producto o si va a cargar o descargar el producto
+- Ruta según la operación o que desee realizar
 - Manejo de Tiempos en cada proceso
 - Dashboard de turnado según su tiempo.
 
